@@ -1,0 +1,179 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fefae0;
+}
+
+header {
+  background-color: #e63946;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f1faee;
+}
+
+.hero button {
+  padding: 0.5rem 1rem;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.menu {
+  padding: 2rem;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.item {
+  background-color: #a8dadc;
+  padding: 1rem;
+  border-radius: 10px;
+  min-width: 100px;
+}
+
+.item p {
+  margin: 0.5rem 0 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Quiz Section */
+.quiz {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #f1faee;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.quiz button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quiz button:hover {
+  background-color: #457b9d;
+}
+
+/* Carousel */
+.carousel {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fef6e4;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.carousel button {
+  margin: 1rem 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #ffb703;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Joke Section */
+.joke {
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #ffe8d6;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.joke button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #6d6875;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.joke p {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero button {
+    font-size: 0.9rem;
+  }
+
+  .item {
+    width: 80%;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

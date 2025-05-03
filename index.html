@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Delicious Bites</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Delicious Bites</h1>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to Delicious Bites</h2>
+    <p>Your favorite meals, freshly served.</p>
+    <button>Order Now</button>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="item">
+        🍕 <strong>Pizza</strong>
+        <p>Cheesy delight with your favorite toppings.</p>
+      </div>
+      <div class="item">
+        🍔 <strong>Burger</strong>
+        <p>Juicy patty served with fresh veggies and sauces.</p>
+      </div>
+      <div class="item">
+        🥗 <strong>Salad</strong>
+        <p>Fresh and healthy mix of greens and dressings.</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Quiz Section -->
+  <section class="quiz">
+    <h2>Food Quiz</h2>
+    <p id="question"></p>
+    <div id="options"></div>
+    <p id="result"></p>
+    <p id="score"></p>
+  </section>
+
+  <!-- Carousel Section -->
+  <section class="carousel">
+    <h2>Our Special Dishes</h2>
+    <img id="carouselImage" alt="Dish Image" />
+    <div>
+      <button onclick="prevImage()">⟨ Prev</button>
+      <button onclick="nextImage()">Next ⟩</button>
+    </div>
+  </section>
+
+  <!-- Joke and Weather Section -->
+  <section class="joke">
+    <h2>Fun & Info</h2>
+    <button onclick="fetchJoke()">Get a Food Joke</button>
+    <p id="jokeDisplay"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
